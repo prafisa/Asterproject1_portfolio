@@ -1,11 +1,17 @@
 body{
-    width: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 .text-center{
     text-align: center;
 }
 table, th, td{
     border: 1px solid black;
+    text-align: center;
 }
 .table0{
     border: 1px solid black;
@@ -26,6 +32,7 @@ h1{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    width: 52%;
 }
 
 .table2 td, .table3 td{
@@ -66,3 +73,8 @@ h1{
     font-weight: bold;
 }
 
+.second{
+    display: flex;
+    gap: 50%;
+    margin-top: 20px;
+}
