@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+
+        body{
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            
+
+        }
+
+        /* .wrap {
+            min-height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding:40px 16px;
+        } */
+
+        .card {
+            width: 100%;
+            max-width: 520px;
+            background:var(--card-bg);
+            border-radius: 12px;
+            padding:var(--card-pad);
+            box-shadow: 0px 30px rgba(16, 24, 40, 0.06);
+            border: 1px solid rgba(15, 23, 42, 0.03);
+        }
+
+        h2 { margin: 0 0 14px 0; font-size: 18px;}
+        .muted { color: var(--muted); font-size: 13px; margin-bottom: 8px; display:block; }
+
+        form{
+            border: 1px black solid;
+            padding: 10px 15px;
+        }
+        
+        input[type=email], input[type=text], select{
+            width: 100%;
+        }
+         .name{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+         }
+         .form-row{
+            display: flex;
+            justify-content: center;
+         }
+        
+    </style>
+</head>
+<body>
+<form>
+    <label for="email">Email address</label>
+    <div>
+    <input type="email" id="email" name="email">
+    </div>
+
+    <br>
+
+    <div>
+    <label for="name">Full name</label>
+    <span class="name">
+        <input type="text" name="name" id="name" placeholder="First name" required>
+        <input type="text" name="" id="name" placeholder="Last name" required>
+    </span>
+    </div>
+
+    <br>
+
+    <label for="address">Address</label>
+    <div class="address">
+        <input type="text" name="" id="" placeholder="Street Address" required>
+        <br>
+        <input type="text" name="" id="" placeholder="Office, Suite, Apt." required>
+    </div>
+
+    <br>
+
+    <div class="form-row">
+        <div class="col">
+            <label for="city">City</label><br>
+            <input type="text" name="city" id="city" required>
+        </div>
+        <div style="width: 150px;">
+            <label for="state">State</label>
+            <select name="state" id="state" required>
+                <option value="" disabled selected hidden>Choose...</option>
+                <option value="">Bagmati</option>
+                <option value="">Karnali</option>
+                <option value="">Gandaki</option>
+                <option value="">Koshi</option>
+                <option value="">Madhesh</option>
+                <option value="">Sudurpashchim</option>
+                <option value="">Lumbini</option>
+            </select>
+        </div>
+        <div style="width: 100px;">
+            <label for="zip">ZIP</label>
+            <input type="text" name="" id="" inputmode="numeric" required>
+        </div>
+    </div>
+
+    <div>
+        <label for="payment">Payment Details</label>
+        <div class="payment-row">
+            <span class="lock-icon" aria-hidden="true"></span>
+            <input id="card" name="card" type="text" inputmode="numeric" placeholder="🔒0000 0000 0000 0000" required>
+            <input id="exp" name="exp" type="text" placeholder="MM/YY" required>
+            <input id="cvv" name="cvv" type="text" placeholder="CVV" inputmode="numeric" pattern="" required>
+            <input id="zip" name="zip" type="text" placeholder="zip" inputmode="numeric">
+        </div>
+    </div>
+
+    <div class="help">ENCRYPTED AND SECURED</div><br>
+
+    <div>
+        <label for="">What radio technologies are you using?</label><br>
+        <input type="checkbox" name="" id="">2G
+        <input type="checkbox" name="" id="">3G
+        <input type="checkbox" name="" id="">4G LTE
+        <input type="checkbox" name="" id="">CAT-M
+    </div>
+    <br>
+    <div>
+        <label for="">How much data do you expect to use each month?</label><br>
+        <input type="radio" name="" id="">0-50MB
+        <input type="radio" name="" id="">50-250MB
+        <input type="radio" name="" id="">250MB-1GB
+        <input type="radio" name="" id="" disabled>1GB+
+    </div><br>
+
+    <div>
+        <label for="promocode">Promo Code</label><br>
+        <input type="text" name="" id=""><br><br>
+
+        <input type="checkbox" name="" id="">Sign me up for annoying offers<br>
+        <button type="submit">Place Order</button>
+
+    </div>
+</form>
+</body>
+</html>

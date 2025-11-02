@@ -1,0 +1,68 @@
+body{
+    width: 60%;
+}
+.text-center{
+    text-align: center;
+}
+table, th, td{
+    border: 1px solid black;
+}
+.table0{
+    border: 1px solid black;
+    margin: 20px 0;
+}
+p{
+    margin-top: -15px;
+}
+h1{
+    color: red;
+}
+
+.table1{
+    width: 100%;
+}
+
+.table-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.table2 td, .table3 td{
+    width: 50px;
+}
+
+.table4{
+    margin-top: 20px;
+    width: 100%;
+}
+.table th{
+    width: 40%;
+}
+
+.blue-color{
+    background-color: rgb(172, 172, 245);
+}
+
+.yellow-color{
+    background-color: rgb(242, 250, 126);
+}
+
+.orange-color{
+    background-color: rgb(243, 202, 126);
+}
+
+.light-green{
+    background-color: rgb(178, 247, 123);
+}
+
+.skin-color{
+    background-color: rgb(245, 177, 138);
+    color: red;
+}
+
+.table4 td{
+    color: red;
+    font-weight: bold;
+}
+

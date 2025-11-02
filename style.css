@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(178, 178, 212);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 30px;
+    color: red;
+}
+
+p{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.styled-list li, #styled-paragraph{
+    background-color: rgb(230, 240, 176);
+    border: 1px solid plum;
+    margin: 5px;
+    padding: 5px;
+}
+
+#styled-paragraph span{
+    background-color: rgb(97, 207, 171);
+    padding: 3px;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
